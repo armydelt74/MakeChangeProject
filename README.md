@@ -8,8 +8,11 @@ This is a cash register simulator. In the cash register we will calculate the am
 
 #### Concepts
 
-Use Mod % operator and other methods learned to create a simulated cash register capable of calculating exact change through multiple tendered cash scenarios.
+Using Mod % operator in combination with boolean statements it should be straight forward to create a descending series of arguments to account for the amount of change due to the hypothetical buyer through multiple tendered cash scenarios.
 
 #### Technology Used
+
+Oracle Java SDK 1.8; 
+Eclipse IDE - for Enterprise Java Developers; Version: 2019-09 R (4.13.0) Build id: 20190917-1200 Github
 
 #### Lessons Learned
