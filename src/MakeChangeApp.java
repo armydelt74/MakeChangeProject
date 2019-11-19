@@ -44,7 +44,7 @@ public class MakeChangeApp {
 		int nickel = dim % nick;
 		int penny = nickel % pen;
 		
-		if (ten >= 0) {
+		if (change > ten) {
 			int t = ((change - ten) / dec);
 			System.out.println("Change of " + t + " Ten dollar bill(s)");
 		}
