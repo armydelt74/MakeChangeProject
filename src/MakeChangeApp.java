@@ -44,41 +44,43 @@ public class MakeChangeApp {
 		int nickel = dim % nick;
 		int penny = nickel % pen;
 		
-		if (dec == (change - ten)) {
-			System.out.println("Change of $10 ");
+		if (ten >= 0) {
+			int t = ((change - ten) / dec);
+			System.out.println("Change of " + t + " Ten dollar bill(s)");
 		}
 		
 		if (ten >= fiv && ten != dec) {
-			System.out.println("Change of $5 ");
+			int f = ((ten - five) / fiv);
+			System.out.println("Change of " + f + " five dollar bill(s)" );
 		}
 		
 		if (five >= dol) {
-			int c = (five - doll) / 100;
-			System.out.println("Change of " + c + "$1 " );
+			int c = ((five - doll) / dol);
+			System.out.println("Change of " + c + " one dollar bill(s)" );
 		}
 		
 		if (doll >= quart) {
 			int q = doll - quarter;
 			q = q / quart;
-			System.out.println("Change " + q + " $ 0.25");
+			System.out.println("Change of " + q + " quarters");
 		}
 		
 		if (quarter >= dime) {
 			int d = quarter - dim;
 			d = d / dime;
-			System.out.println("Change " + d + " $ 0.10");
+			System.out.println("Change of " + d + " dimes ");
 		}
 		
 		if (dim >= nick) {
 			int n = dim - nickel;
 			n = n / nick; 
-			System.out.println("Change " + n + " $ 0.05");
+			System.out.println("Change of " + n + " nickels ");
 		}
 		
 		if (nickel >= pen) {
 			int p = nickel - penny;
 			p = p / pen;
-			System.out.println("Change " + p + "$ 0.01");
+			System.out.println("Change of " + p + " pennies ");
 		}
 		
 	}// main
